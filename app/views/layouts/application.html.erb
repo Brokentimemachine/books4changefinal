@@ -24,9 +24,24 @@
     <nav class = "navbar is-primary">
       <div class="navbar-brand">
       <%= link_to root_path, class: "navbar-item" do %>
-        <h1 class ="title is-5">Books4Change </h1>
+          <img src="http://www.jlteran.com/myemagination/assets/img/openbooklogo.png">
+          <p class ="title is-4">Books4Change </p>
       <% end %>
-        <div class="navbar-burger burger" data-target="navbarExample">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" <%= link_to "About us" , page_path("about") %> </a>
+            <a class="navbar-item" <%= link_to "Contact" , page_path("contact") %> </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" <%= link_to "Report An Issue" , page_path("report") %> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-burger burger" data-target="navbarExample">
           <span></span>
           <span></span>
           <span></span>
@@ -37,15 +52,19 @@
         <div class="navbar-end">
           <div class="field is-grouped">
             <p class="control">
-              <%= link_to 'New Post', new_post_path, class: "button is-primary is-inverted" %>
+              <%= link_to 'All Authors', users_path, class: "button is-primary is-inverted" %>
 
             </p>
             <% if user_signed_in? %>
+              <p class="control">
+                <%= link_to 'New Post', root_path, class: "button is-primary is-inverted" %>
+
+              </p>
             <p class="control">
               <%= link_to current_user.name, edit_user_registration_path, class:"button is-pramary" %>
             </p>
               <p>
-              <%=link_to "Logout", destroy_user_session_path, method: :delete, class:"button is-primary" %>
+              <%=link_to "Logout", destroy_user_session_path, method: :delete, class:"button is-primary"%>
               </p>
               <% else %>
             <p class ="control">
