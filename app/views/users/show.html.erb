@@ -1,0 +1,27 @@
+<% if user_signed_in? %>
+<div class="tile is-parent is-centered">
+  <article class="tile is-child notification is-primary-is-inverted is-rounded">
+    <div class="content">
+      <p class="title"> <%= current_user.name %> </p>
+      <p class="subtitle"><%= current_user.username %></p>
+      <p class="subtitle"><%= current_user.email %></p>
+      <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
+      <% end %>
+      <div class="content">
+        <!-- Content -->
+      </div>
+    </div>
+  </article>
+</div>
+<% current_user.posts.each do | post |  %>
+    <div class="tile is-parent">
+      <div class="tile is-child box">
+        <div class="content">
+          <p> <%= post.post  %></p><br>
+          <p> Post Created At :<%= post.created_at  %></p><br>
+        </div>
+      </div>
+    </article>
+  </div>
+  </div>
+<% end %>

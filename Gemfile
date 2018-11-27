@@ -30,6 +30,8 @@ gem 'simple_form', '~> 4.1'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.5'
 gem 'high_voltage', '~> 3.1'
+
+gem 'paperclip', '~> 4.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
