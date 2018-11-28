@@ -1,24 +1,49 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby Version:
+2.5.1
 
-Things you may want to cover:
+Rails Version:
+5.2.1
 
-* Ruby version
+Setup
+Check out this repository and then,
 
-* System dependencies
+$ bundle install
+$ bundle exec rails db:migrate
+$ bundle exec rails server
+Features
+This application doesn't provide many features in order to keep it simple. Here are the features that it does include:
 
-* Configuration
+See news feed
+Create new post
+Edit Post
+Delete Post
+Create Account/Sign on/Sign out
+View Profile
+Who to Collab With screen
 
-* Database creation
+Used gems
 
-* Database initialization
+For CSS Style
+bulma
+font-awesome-sass
 
-* How to run the test suite
+For testing
+factory_bot
+faker
+rspec
 
-* Services (job queues, cache servers, search engines, etc.)
+For debugging
+bullet
+pry-byebug
+pry-rails
+web-console
 
-* Deployment instructions
+See more details on Gemfile.
 
-* ...
+Test
+$ bundle exec rspec
+Data reset and sample data creation
+$ bundle exec rails db:reset    # Data reset
+$ bundle exec rails db:populate # Create sample data
