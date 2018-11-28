@@ -1,21 +1,24 @@
 # README
 
-##Ruby Version:
+## Ruby Version:
+```
 2.5.1
-
-Rails Version:
+```
+## Rails Version:
+```
 5.2.1
-
-Setup
+```
+## Setup
 Check out this repository and then,
-
+``` 
 $ bundle install
 $ bundle exec rails db:migrate
 $ bundle exec rails server
-Features
+```
+## Features
 This application doesn't provide many features in order to keep it simple. Here are the features that it does include:
 
-See news feed
+**See news feed
 Create new post
 Edit Post
 Delete Post
