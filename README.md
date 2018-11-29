@@ -53,3 +53,6 @@ $ bundle exec rspec
 $ bundle exec rails db:reset    # Data reset
 $ bundle exec rails db:populate # Create sample data
 ```
+
+##Licensing 
+This project is licensed under the MIT License - see the LICENSE.md file for details
