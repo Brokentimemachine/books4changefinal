@@ -1,24 +1,58 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby Version:
+```
+2.5.1
+```
+## Rails Version:
+```
+5.2.1
+```
+## Setup
+Check out this repository and then,
+``` 
+$ bundle install
+$ bundle exec rails db:migrate
+$ bundle exec rails server
+```
+## Features
+This application doesn't provide many features in order to keep it simple. Here are the features that it does include:
 
-Things you may want to cover:
+- **News feed**
+- **Create new post**
+- **Edit Post**
+- **Delete Post**
+- **Create Account/Sign on/Sign out**
+- **View Profile**
+- **Who to Collab With screen**
 
-* Ruby version
+## Gems Used
 
-* System dependencies
+#### For CSS Style
+- bulma
+- font-awesome-sass
 
-* Configuration
+#### For testing
+- factory_bot
+- faker
+- rspec
 
-* Database creation
+#### For debugging
+- bullet
+- pry-byebug
+- pry-rails
+- web-console
+**See more details in Gemfile**
 
-* Database initialization
+## Testing
+```
+$ bundle exec rspec
+```
+#### Data reset and sample data creation
+```
+$ bundle exec rails db:reset    # Data reset
+$ bundle exec rails db:populate # Create sample data
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Licensing 
+This project is licensed under the MIT License - see the LICENSE.md file for details
