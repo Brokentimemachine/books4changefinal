@@ -19,12 +19,12 @@ $ bundle exec rails server
 This application doesn't provide many features in order to keep it simple. Here are the features that it does include:
 
 - **News feed**
-- **Create new post
-- **Edit Post
-- **Delete Post
-- **Create Account/Sign on/Sign out
-- **View Profile
-- **Who to Collab With screen
+- **Create new post**
+- **Edit Post**
+- **Delete Post**
+- **Create Account/Sign on/Sign out**
+- **View Profile**
+- **Who to Collab With screen**
 
 ## Gems Used
 
@@ -42,7 +42,7 @@ This application doesn't provide many features in order to keep it simple. Here 
 - pry-byebug
 - pry-rails
 - web-console
-**See more details in Gemfile
+**See more details in Gemfile**
 
 ## Testing
 ```
