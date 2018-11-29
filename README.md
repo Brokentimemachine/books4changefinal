@@ -18,35 +18,38 @@ $ bundle exec rails server
 ## Features
 This application doesn't provide many features in order to keep it simple. Here are the features that it does include:
 
-**See news feed
-Create new post
-Edit Post
-Delete Post
-Create Account/Sign on/Sign out
-View Profile
-Who to Collab With screen
+- **News feed**
+- **Create new post
+- **Edit Post
+- **Delete Post
+- **Create Account/Sign on/Sign out
+- **View Profile
+- **Who to Collab With screen
 
-Used gems
+## Gems Used
 
-For CSS Style
-bulma
-font-awesome-sass
+#### For CSS Style
+- bulma
+- font-awesome-sass
 
-For testing
-factory_bot
-faker
-rspec
+#### For testing
+- factory_bot
+- faker
+- rspec
 
-For debugging
-bullet
-pry-byebug
-pry-rails
-web-console
+#### For debugging
+- bullet
+- pry-byebug
+- pry-rails
+- web-console
+**See more details in Gemfile
 
-See more details on Gemfile.
-
-Test
+## Testing
+```
 $ bundle exec rspec
-Data reset and sample data creation
+```
+#### Data reset and sample data creation
+```
 $ bundle exec rails db:reset    # Data reset
 $ bundle exec rails db:populate # Create sample data
+```
