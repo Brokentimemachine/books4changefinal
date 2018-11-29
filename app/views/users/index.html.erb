@@ -2,7 +2,7 @@
 
 <% @users.each do |user| %>
   <div class="tile is-parent ">
-    <article class="tile is-child notification is-primary is-rounded has-text-black">
+    <article class="tile is-child notification is-primary is-rounded has-text-black has-text-weight-bold is-size-5">
        <p><%= user.username %></p>
       <p>Member Since : <%= user.created_at %></p>
       <p><%= gravatar_image_tag(user.email, size:65, alt: user.name) %></p>
