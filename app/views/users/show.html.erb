@@ -4,7 +4,8 @@
     <p class="title"> <%= current_user.name %> </p>
     <p class="subtitle"><%= current_user.username %></p>
     <p class="subtitle"><%= current_user.email %></p>
-    <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
+    <p class="subtitle"><%= current_user.publications %></p>
+<!--    <li class="round-image-50"><%#= image_tag(current_user.avatar.url(:thumb)) %></li>-->
 <% end %>
 </article>
 </div>
